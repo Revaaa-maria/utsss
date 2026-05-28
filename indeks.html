@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & CV Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Dev<span>Porto.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skills" class="nav-link">Keahlian</a>
+                <a href="#timeline" class="nav-link">Pengalaman</a>
+                <a href="#portfolio" class="nav-link">Portofolio</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-12.37c-.39-.39-1.02-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.38.39-1.02 0-1.41zM7.05 18.41l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41s-1.02-.39-1.41 0z"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12.3 2a10 10 0 0 0-1.9 19.8 10 10 0 0 0 11.5-11.5 10.2 10.2 0 0 1-9.6-8.3z"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge">CV Online</span>
+                    <h1>Hai, Saya <span class="highlight">Fatihah Febri Zahfani</span></h1>
+                    <h2 class="typing-text" id="typingElement"></h2>
+                    <p>Membangun platform digital dengan estetika premium tingkat tinggi dan fungsionalitas kode yang bersih serta adaptif.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary ripple">Hubungi Saya</a>
+                        <a href="#portfolio" class="btn btn-secondary">Lihat Karya</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-wrapper">
+                        <img src="photo.jpg" alt="Foto Profil" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section reveal">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Saya adalah seorang Mahasiswa Sistem Informasi yang berfokus penuh pada rekayasa antarmuka web modern. Pendekatan saya menggabungkan struktur kode semantik yang kuat dengan keindahan desain UI/UX minimalis.</p>
+                        <p>Bertekad kuat melahirkan interaksi mikro yang memanjakan mata pengguna demi meningkatkan impresi sebuah brand di dunia digital.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <h3 class="stat-number" data-target="12">0</h3>
+                            <p>Projek Selesai</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 class="stat-number" data-target="5">0</h3>
+                            <p>Sertifikasi Global</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section reveal">
+            <div class="container">
+                <h2 class="section-title">Keahlian Utama</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info"><span>HTML5 & CSS3 Modern</span><span class="skill-percentage">90%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>JavaScript Vanilla ES6</span><span class="skill-percentage">80%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>UI/UX & Reka Bentuk Responsif</span><span class="skill-percentage">85%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+                    </div>
+                </div>
+                <div class="tags-container">
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Kerja Tim</span>
+                    <span class="tag">Manajemen Waktu</span>
+                    <span class="tag">Komunikatif</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section reveal">
+            <div class="container">
+                <h2 class="section-title">Riwayat & Pengalaman</h2>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2024 - Sekarang</span>
+                            <h3>S1 Sistem Informasi</h3>
+                            <h4>Universitas Internasional Semen Indonesia</h4>
+                            <p>Panitia Konsumsi upgarding LDK.</p>
+                            <p>Panitia Konsumsi seminar monitoring LDK.</p>
+                            <p>Anggota PSDM LDK.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2021-2024</span>
+                            <h3>Rekayasa Perangkat Lunak</h3>
+                            <h4>SMK Semen Gresik</h4>
+                            <p>Magang di PLN Gresik bagian pelayanan pemeliharaan.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section reveal">
+            <div class="container">
+                <h2 class="section-title">Portofolio Pilihan</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-holder">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=600" alt="Projek 1" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>SaaS Platform Dashboard</h3>
+                            <p>Antarmuka analytics premium dengan pengaturan tata letak CSS Grid yang kompleks dan responsif penuh.</p>
+                            <a href="#" class="portfolio-link">Lihat Kasus Studio →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-holder">
+                            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?q=80&w=600" alt="Projek 2" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>E-Commerce Minimalis</h3>
+                            <p>Situs belanja pakaian dengan konsep estetik premium dan micro-interaction transisi halaman yang smooth.</p>
+                            <a href="#" class="portfolio-link">Lihat Kasus Studio →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-holder">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600" alt="Projek 3" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Fintech Mobile Website</h3>
+                            <p>Optimasi performa halaman aplikasi web keuangan yang ringan, cepat, dan aman.</p>
+                            <a href="#" class="portfolio-link">Lihat Kasus Studio →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section reveal">
+            <div class="container">
+                <h2 class="section-title">Mari Berkolaborasi</h2>
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Punya ide luar biasa?</h3>
+                        <p>Kirimkan pesan! Saya siap membantu mewujudkan produk impian Anda menjadi kenyataan digital yang memukau.</p>
+                        <div class="contact-details">
+                            <p><strong>E-mail:</strong> kontak@fatihahfebriz.com</p>
+                            <p><strong>Lokasi:</strong> Gresik, Indonesia</p>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" required placeholder="Masukkan nama Anda">
+                            <span class="error-msg">Nama wajib diisi!</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" required placeholder="nama@email.com">
+                            <span class="error-msg">Masukkan email yang valid!</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan Anda</label>
+                            <textarea id="message" rows="5" required placeholder="Tulis rencana projek Anda..."></textarea>
+                            <span class="error-msg">Pesan tidak boleh kosong!</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary ripple">Kirim Pesan →</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Fatihah Febri Zahfani. Hak Cipta Dilindungi.</p>
+            <div class="footer-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
